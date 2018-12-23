@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mario Bros Inc. Pyramid Slide</title>
+    <style>
+        .header{
+            background-color:palevioletred;
+            text-align: center;
+            color:oldlace;
+            height:100px;
+            padding-top:50px;
+            margin:0;
+        }
+
+        body{
+            background-color: oldlace;
+            margin:0;
+            padding:0;
+        }
+
+        .wrapper{
+            border:palevioletred 2px solid;
+            width:600px;
+            margin-left:400px;
+            margin-top:100px;
+            background-color:lightgray;
+        }
+
+        .wrapper form{
+            background-color:gray;
+            text-align: center;
+            
+        }
+
+        .wrapper #pyramid{
+            background-color:lightgray;
+            color:palevioletred;
+            text-align: right;
+            font-size:20px;
+            font-weight: bold;
+            margin-right: 200px;
+            line-height: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+          <h1 class="header">Pyramid Slide</h1>
+          <div class="wrapper">
+          <form>
+            <label for="char">Brick Symbol:</label>  
+            <select id="char" >
+                <option value="#" id="1">#</option>
+                <option value="@" id="2">@</option>
+                <option value="X" id="3">X</option>
+                <option value="$" id="4">$</option>
+            </select>
+            <label for="height">How high?</label>
+            <input type="range" id="height" name="points" min="1" max="20" value="8">
+            <span id="current">8</span>
+          </form>
+          <div id="pyramid"></div>
+        </div>
+
+          <script src= "pyramid.js"></script>
+</body>
+</html>
